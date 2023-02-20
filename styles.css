@@ -1,0 +1,160 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'League Spartan', sans-serif;
+    background-color: hsl(0, 0%, 100%);
+    flex-direction: column;
+    background-image: url("images/bg-pattern-top-mobile.svg"), url("images/bg-pattern-bottom-mobile.svg");
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+}
+p{
+    font-weight: 500;
+    font-size: 15px;
+    color: lightslategray;
+}
+footer{
+    display: block;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.container{
+    margin: 5% 0;
+}
+.row{
+    margin: 3% 2%;
+}
+/* Intro */
+
+#intro{
+    padding: 3%;
+}
+
+.title{
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    font-size: 40px;
+    line-height: 1;
+}
+/* Rating */
+
+.rating-box{
+    height: 60px;
+    width: 100%;
+    background-color: hsl(300, 24%, 96%);
+    margin: 10px auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.rating-text{
+    color: hsl(300, 43%, 22%);
+    font-weight: 500;
+    font-size: 15px;
+}
+.star-svg{
+    padding: 2%;
+}
+/* Testimonial */
+
+.card{
+    background-color: hsl(300, 43%, 22%);
+    padding: 10% 5%;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    text-align: left;
+}
+.card-title{
+    color: white;
+}
+.card-subtitle{
+    color: hsl(333, 80%, 67%);
+}
+.card-text{
+    color: hsl(300, 24%, 96%);
+}
+.testimonial-img{
+    height: 50px;
+    width: 50px;
+    float: left;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    margin-right: 20px;
+}
+.testimonial-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2% 0;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 600px) {
+    body{
+    background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+}
+/* Intro */
+#intro p{
+    width: 70%;
+    text-align: left;
+}
+
+/* Rating */
+.rating-box{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    width: 70%;
+}
+.star-svg{
+    float: left;
+    width: 50%;
+
+}
+.rating-text{
+    float: right;
+    width: 50%;
+}
+
+/* Testimonial */
+.box-1{
+    position: relative;
+    right: 20px;
+}
+.box-2{
+    position: relative;
+    left: 30px;
+}
+.box-3{
+    position: relative;
+    left: 80px;
+}
+.card-2{
+    position: relative;
+    top: 20px;
+}
+.card-3{
+    position: relative;
+    top: 40px;
+}
+}
+
+/* Attribution */
+.attribution {font-size: 11px; text-align: center;}
+.attribution a {color: hsl(228, 45%, 44%);}
